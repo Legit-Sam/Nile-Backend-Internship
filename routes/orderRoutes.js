@@ -14,7 +14,7 @@ const { validate } = require('../middleware/validate');
 
 /**
  * @swagger
- * /orders:
+ * /api/orders:
  *   post:
  *     summary: Create a new order
  *     tags: [Orders]
@@ -47,7 +47,7 @@ router.post('/', authenticate, createOrderValidator, validate, orderController.c
 
 /**
  * @swagger
- * /orders:
+ * /api/orders:
  *   get:
  *     summary: Get all orders
  *     tags: [Orders]
@@ -61,7 +61,7 @@ router.get('/', authenticate, orderController.getAllOrders);
 
 /**
  * @swagger
- * /orders/payout/{vendorId}:
+ * /api/orders/payout/{vendorId}:
  *   get:
  *     summary: Get payout summary for a vendor
  *     tags: [Orders]

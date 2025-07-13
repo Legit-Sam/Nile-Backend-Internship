@@ -15,7 +15,7 @@ const options = {
         description: "Local server",
       },
       {
-        url: "https://your-deployment-url.com",
+        url: "https://nile-backend-internship.onrender.com",
         description: "Deployed server",
       },
     ],

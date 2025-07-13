@@ -14,7 +14,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /vendors/register:
+ * /api/vendors/register:
  *   post:
  *     summary: Register a new vendor
  *     tags: [Auth]
@@ -54,7 +54,7 @@ router.post("/register", registerVendorValidator, validate, registerVendor);
 
 /**
  * @swagger
- * /vendors/login:
+ * /api/vendors/login:
  *   post:
  *     summary: Login a vendor and receive a JWT token
  *     tags: [Auth]
